@@ -10,6 +10,7 @@ export default new Vuex.Store({
     state: {
         mainIndex: 1,
         reportIndex: "1",
+        hasLogin: false
     },
     mutations: {
         setReportIndex(state, index) {
@@ -22,6 +23,10 @@ export default new Vuex.Store({
         saveTabIndex(state, payload) {
             state.mainIndex = payload.mainIndex;
             state.reportIndex = payload.reportIndex;
+        },
+
+        setLogin(state, isLogin) {
+            state.hasLogin = isLogin;
         }
     }
 })

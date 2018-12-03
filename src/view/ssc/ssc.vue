@@ -1,7 +1,6 @@
 <template>
     <div class="sscContainer">
-        <!--重庆时时彩-->
-        <Title content="xx" :onBack="handleBack" :fixed="true"/>
+        <Title content="重庆时时彩" :onBack="handleBack" :fixed="true"/>
 
         <div class="footerContainer bg-primary">
             <div>选中号码: 2553546</div>

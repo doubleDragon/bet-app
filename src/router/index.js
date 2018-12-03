@@ -6,6 +6,7 @@ import Report from '../view/report';
 import Self from '../view/self';
 import Order from '../view/order';
 import Ssc from '../view/ssc'
+import Login from '../view/login';
 
 Vue.use(Router);
 
@@ -41,5 +42,10 @@ export default new Router({
             name: 'ssc',
             component: Ssc
         },
+        {
+            path: '/login',
+            name: 'login',
+            component: Login
+        }
     ]
 })
