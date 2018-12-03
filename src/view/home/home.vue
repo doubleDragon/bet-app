@@ -6,13 +6,13 @@
         <div class="swipe">
             <mt-swipe :auto="4000" class="bound">
                 <mt-swipe-item>
-                    <img :src="bannerList[0]" alt="">
+                    <img :src="bannerList[0]" alt="" class="img">
                 </mt-swipe-item>
                 <mt-swipe-item>
-                    <img :src="bannerList[1]" alt="">
+                    <img :src="bannerList[1]" alt="" class="img">
                 </mt-swipe-item>
                 <mt-swipe-item>
-                    <img :src="bannerList[2]" alt="">
+                    <img :src="bannerList[2]" alt="" class="img">
                 </mt-swipe-item>
             </mt-swipe>
         </div>
@@ -52,6 +52,11 @@
 
         .swipe {
             height: 130px;
+
+            .img {
+                width: 100%;
+                height: auto;
+            }
         }
 
         .row {
