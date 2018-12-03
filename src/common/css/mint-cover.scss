@@ -1,0 +1,27 @@
+//$color-primary: #d91d36;
+
+.mint-tabbar {
+    height: 58px;
+
+    .mint-tab-item-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .mint-tab-item-label {
+        color: white;
+    }
+}
+
+.mint-navbar {
+    .mint-tab-item.is-selected {
+        color: #d91d36;
+        border-bottom-color: #d91d36;
+        border-bottom-width: 1px;
+        margin-bottom: 0;
+    }
+
+    .mint-tab-item-label {
+        font-size: 18px;
+    }
+}

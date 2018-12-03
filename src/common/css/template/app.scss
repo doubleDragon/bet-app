@@ -1,0 +1,37 @@
+//@import "function";
+@import "var";
+@import "mixin";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+#app {
+    position: relative;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+
+    //padding-bottom: 58px;
+}
+
+.c-primary {
+    color: #d91d36;
+}
+
+.bg-primary {
+    background-color: #d91d36;
+}
