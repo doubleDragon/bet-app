@@ -87,7 +87,11 @@
         methods: {
             onClickItem(title) {
                 console.log("click: " , title);
-                this.$router.push("ssc");
+                if('江苏快3' === title) {
+                    this.$router.push("quick");
+                } else {
+                    this.$router.push("ssc");
+                }
             }
         },
         data() {

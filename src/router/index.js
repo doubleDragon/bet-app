@@ -1,11 +1,12 @@
-import Vue from 'vue'
-import Router from 'vue-router'
+import Vue from 'vue';
+import Router from 'vue-router';
 import Container from '../view/container';
 import Home from '../view/home';
 import Report from '../view/report';
 import Self from '../view/self';
 import Order from '../view/order';
-import Ssc from '../view/ssc'
+import Ssc from '../view/ssc';
+import Quick from '../view/quick';
 import Login from '../view/login';
 
 Vue.use(Router);
@@ -46,6 +47,11 @@ export default new Router({
             path: '/login',
             name: 'login',
             component: Login
-        }
+        },
+        {
+            path: '/quick',
+            name: 'quick',
+            component: Quick
+        },
     ]
 })
