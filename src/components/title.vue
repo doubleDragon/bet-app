@@ -1,5 +1,5 @@
 <template>
-    <div class="titleContainer bg-primary">
+    <div class="titleContainer bg-primary" :class="fixed ? 'fixTop' : ''">
 
         <div v-show="onBack" @click="handleClickBack" class="backContainer">
             <i class="iconfont icon-left icon"></i><span>返回</span>
@@ -21,6 +21,10 @@
             content: {
                 type: String,
                 default: ""
+            },
+            fixed: {
+                type: Boolean,
+                default: false
             }
         },
         methods: {
@@ -41,6 +45,7 @@
         flex-direction: row;
         position: relative;
 
+        width: 100%;
         height: 60px;
         color: white;
         line-height: 60px;
@@ -64,5 +69,10 @@
                 font-size: 26px;
             }
         }
+    }
+
+    .fixTop {
+        position: fixed;
+        top: 0;
     }
 </style>

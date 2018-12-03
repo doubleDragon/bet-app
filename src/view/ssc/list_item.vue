@@ -38,7 +38,7 @@
         </div>
 
 
-        <div class="mt10 ml54 divider">
+        <div v-show="showDivider" class="mt10 ml54 divider">
         </div>
     </div>
 </template>
@@ -141,6 +141,10 @@
                 type: Array,
                 default: []
             },
+            showDivider: {
+                type: Boolean,
+                default: true
+            }
         },
         data() {
             return {
