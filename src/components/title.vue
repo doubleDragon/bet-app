@@ -52,6 +52,8 @@
 
         justify-content: center;
 
+        z-index: 1000;
+
         .titleContent {
             font-size: 27px;
         }

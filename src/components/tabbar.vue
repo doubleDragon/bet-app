@@ -1,5 +1,5 @@
 <template>
-    <mt-tabbar v-model="selected" fixed class="bg-primary">
+    <mt-tabbar v-model="selected" fixed>
         <mt-tab-item id="1" @click.native="() =>changeTab(0)">
             <img slot="icon" src="../assets/ic_home.png" alt="">
             大厅

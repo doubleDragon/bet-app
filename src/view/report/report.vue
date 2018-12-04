@@ -29,7 +29,6 @@
 
     </div>
 </template>
-
 <script>
     import ListItem from './list_item.vue';
     import Title from '../../components/title.vue';
@@ -66,6 +65,7 @@
         }
     }
 </script>
+
 
 <style lang="scss" scoped>
     .reportContainer {

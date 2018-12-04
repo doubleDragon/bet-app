@@ -77,6 +77,7 @@
     import {BANNER_LIST} from "./constant";
     import GridItem from './grid_item.vue';
     import Title from '../../components/title.vue';
+    import {PAGE_HOME} from "../container/constant";
 
     export default {
         name: 'home',
@@ -87,6 +88,7 @@
         methods: {
             onClickItem(title) {
                 console.log("click: " , title);
+                this.$store.commit('setMainIndex', PAGE_HOME);
                 if('江苏快3' === title) {
                     this.$router.push("quick");
                 } else {
