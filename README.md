@@ -1,3 +1,5 @@
+test
+
 # bet-app
 
 > A Vue.js project
